@@ -13,5 +13,12 @@
     "@types/react-dom": "^19.2.3",
     "prisma": "^5.10.2",
     "typescript": "^5.9.3"
+  },
+
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   }
 }
