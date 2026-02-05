@@ -12,7 +12,7 @@ Voici la correspondance entre les éléments demandés et l'architecture du proj
 | :--- | :--- | :--- |
 | **1. Schéma BDD** | `prisma/schema.prisma` | Modèle complet incluant les tables `employees`, `titles`, `salaries`, etc., + la table `User` pour l'auth. |
 | **2. Routes API** | `app/api/` | Contient les dossiers `login`, `stats`, `employees` et `export`. |
-| **3. Proxy (Protection)** | `middleware.ts` | Fichier à la racine. Intercepte les requêtes pour vérifier le JWT et le rôle Admin (agit comme `proxy.ts`). |
+| **3. Proxy (Protection)** | `proxy.ts` | Fichier à la racine. Intercepte les requêtes pour vérifier le JWT et le rôle Admin. |
 | **4. Doc Design Pattern** | `README.md` | Voir la section détaillée ci-dessous. |
 
 ---
