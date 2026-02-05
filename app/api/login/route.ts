@@ -1,13 +1,12 @@
-// app/api/login/route.ts
 import { NextResponse } from 'next/server';
 import { PrismaClient } from '@prisma/client';
 import { SignJWT } from 'jose';
 
 const prisma = new PrismaClient();
-const SECRET = new TextEncoder().encode('MON_SUPER_SECRET');
+const SECRET = new TextEncoder().encode('SECRET_KEY');
 
 export async function POST(req: Request) {
-  const body = await req.json(); // On récupère les données envoyées
+  const body = await req.json(); 
   const { email, password } = body;
 
   const user = await prisma.user.findUnique({ where: { email } });
